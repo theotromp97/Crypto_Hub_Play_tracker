@@ -1,0 +1,55 @@
+﻿Functional design document
+________________
+
+
+Purpose of this document
+The purpose of this document is to inform all developers, testers and other interested parties of the functional specifications of the CryptoHub Play Tracker project. The end goal of the project should be described as clearly as possible in a way that there can be no confusion on certain aspects of the bot. Furthermore this document should serve as a programming guideline for the development of the bot. The document contains a functional description of the bot, the attached database and the (graphical) user interface. 
+Lastly this document also introduces the project team members.
+________________
+Team members
+Name:                Theo
+Age:                 24
+Origin:                The Netherlands        (GMT + 1:00)
+Background:        Software Engineer in machine building. 2+ years of experience in software and electrical engineering. I work 40 hours a week in a machine building company in the Netherlands. Hope to be able to free some time in the evening and on weekends to build on the bot.
+
+
+________________
+
+
+Functional description (Final version)
+The main focus of the bot is to register all plays of the users. A play is defined as a trade for crypto. Some features the bot should be able to do is:
+* Register buying price of an asset
+* Register SL/TP
+* partially exit the trade
+* set the buying or selling price of an asset
+* delete previous plays (maybe admin privileged)
+* Add description / comment on a trade
+* Add type of trade (scalp / swing / daytrade)
+
+
+Another part of the bot is storing all data on a server (database). The data that needs to be stored is:
+* The above mentioned functions of a single trade (a play)
+* The player name
+* The server the player is in (to calculate the best player in a specific server).
+
+
+With the data above the bot should be able to calculate the following things:
+* Winrate of a single player
+* Favorite trading pair
+* Best trader of a server
+* Best trader overall
+* Gain on a single trade
+* Best gain on a single trade
+* Best gain in a week / month / day
+
+
+For the bot to be able to input trades on market price, the bot should be able to get the current market price of all standard crypto currencies.
+
+
+________________
+
+
+Functional description (Final version)
+The initial version of the bot will be a simplified version to test out the usage.
+This version will not be able to automatically buy at market price. Instead a user always has to set the buying price. The bot also cannot sell automatically for TP or SL. The play has to be closed automatically.
+This will simplify the development process by quite a lot because there will be no need for the price checker described in the previous chapter.
