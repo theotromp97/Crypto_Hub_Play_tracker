@@ -49,7 +49,8 @@ For the bot to be able to input trades on market price, the bot should be able t
 ________________
 
 
-Functional description (Final version)
+Functional description (Initial version)
 The initial version of the bot will be a simplified version to test out the usage.
 This version will not be able to automatically buy at market price. Instead a user always has to set the buying price. The bot also cannot sell automatically for TP or SL. The play has to be closed automatically.
 This will simplify the development process by quite a lot because there will be no need for the price checker described in the previous chapter.
+The first version also has no graphical user interface to view the leaderboard. This can be done via discord commands or via CSV files.
